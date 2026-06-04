@@ -1,1 +1,179 @@
 
+/* ===== global ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F8F5ED;
+    color: #2F3B2F;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+
+/* ===== header ===== */
+
+header {
+    background-color: #FFFDF8;
+    padding: 20px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 16px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: #5F8A5F;
+    font-size: 2rem;
+}
+
+
+/* ===== buttons ===== */
+
+button {
+    background-color: #7DB37D;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    padding: 12px 20px;
+
+    font-size: 1rem;
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #679967;
+}
+
+.delete-btn {
+    background-color: #d95c5c;
+}
+
+.delete-btn:hover {
+    background-color: #b84646;
+}
+
+/* ===== sections ===== */
+
+section {
+    background-color: #FFFDF8;
+
+    padding: 25px;
+    margin-bottom: 25px;
+
+    border-radius: 16px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+section h2 {
+    margin-bottom: 15px;
+    color: #5F8A5F;
+}
+
+/* ===== inputs ===== */
+
+input {
+    width: 100%;
+
+    padding: 12px;
+    margin-bottom: 12px;
+
+    border: 2px solid #D7EFD7;
+    border-radius: 10px;
+
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: #7DB37D;
+}
+
+/* ===== contact form ===== */
+
+.contact-form {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 12px;
+}
+
+/* ===== search ===== */
+
+.search-section {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search-section input {
+    margin-bottom: 0;
+}
+
+/* ===== table ===== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+
+thead {
+    background-color: #A8CFA8;
+}
+
+thead th {
+    padding: 15px;
+    text-align: left;
+}
+
+tbody tr {
+    background-color: white;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+tbody tr:hover {
+    background-color: #EEF6EE;
+}
+
+td {
+    padding: 15px;
+}
+
+/* ===== responsive ===== */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 15px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .search-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
